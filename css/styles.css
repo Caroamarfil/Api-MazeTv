@@ -1,0 +1,171 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+    display: flex; 
+    flex-direction: column; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    min-height: 8em;
+    padding: 5vh 2vw; 
+    background: radial-gradient(circle, #6EC6E4, #4A90E2 40%, #357ABD 70%, #1F4E79 100%);
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0 auto; 
+    text-align: center; 
+    font-size: 2.5vw;
+    color: #4A4A4A;
+    font-family: "Molle", cursive;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #3ECF8E;
+    border: #257a54;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+button:hover {
+    background-color: #2DBB6E;
+}
+
+#home-container {
+    width: 20em;
+}
+
+#search-container {
+    display: flex;
+    align-items: center; 
+    width: 20em;
+}
+
+#search-button {
+    margin-bottom: 0.4em; 
+    padding: 8px 15px;
+    background-color: #3ECF8E;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#search-button:hover {
+    background-color: #2DBB6E;
+}
+
+#search-input {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1; 
+    width: 100%;
+    background-image: url("../assets/bckgr.jpg");
+    background-repeat: repeat;
+    background-position: top left;
+}
+#card-container .card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.89);
+    overflow: hidden;
+    background-color: rgb(245, 242, 242);
+    text-align: center;
+}
+#pagination-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2em; 
+    margin-top: 1.2em; 
+    margin-bottom: 1.2em;
+}
+
+#message-container {
+    margin-top: 1.2em; 
+    font-size: 1.6em;
+    padding: 1.2em;
+    border-radius: 1em;
+    color: #4A4A4A;
+    background-color: #6EC6E4;
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.card {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-family: "Libre Baskerville", serif;
+}
+
+.card p {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: #000000;
+    font-family: "Merriweather", serif;
+}
+
+footer {
+    padding: 2vh 2vw;
+    text-align: center; 
+    width: 100%; 
+    min-height: 5em;
+    background: radial-gradient(circle, #6EC6E4, #4A90E2 40%, #357ABD 70%, #1F4E79 100%);
+    color: #4A4A4A; 
+    font-size: 1.2em;
+    box-sizing: border-box;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    header, footer {
+        padding: 3vh 5vw; 
+    }
+
+    h1 {
+        font-size: 4vw; 
+    }
+}

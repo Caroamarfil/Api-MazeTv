@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Series de TV</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Molle&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Molle&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="home-container">
+            <button id="home-button">
+                <i class="fas fa-home"></i> Home
+            </button> <!-- Botón de Home -->
+        </div>
+        
+        <h1 >Listado de Series de TV</h1>
+        <div id="search-container">
+            <button id="search-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <input type="text" id="search-input" placeholder="Buscar series..." />
+            
+        </div>
+    </header>
+    <main>
+        <div id="message-container"></div> <!-- Contenedor de mensajes -->
+        <div id="card-container"></div> <!-- Contenedor de tarjetas -->  
+        <div id="pagination-buttons">
+            <button id="prev-page">Página Anterior</button>
+            <button id="next-page">Página Siguiente</button>
+            <button id="back-button" style="display: none;">Volver a la navegación</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/script.js"></script> 
+</body>
+</html>
